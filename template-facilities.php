@@ -4,32 +4,15 @@ Template Name: Facilities Template
 */ 
 get_header(); ?>
 
-<section id="<?php the_title();?>-page" class="container">
-    <div class="row" id="facilities-section">
-		<div class="col-md-5">
-            <h2 class="facilities-title"><?php the_title();?></h2>
-        </div>
-        <div class="col-md-7">
-            <?php if (have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                <?php the_content();?> 
-            <?php endwhile; endif; ?>
-            <?php wp_reset_postdata();?>
-		</div>
-	</div>
-</section>
-
 <section id="facilities" class="container-fluid">
     <section class="container">
     	<div class="row" id="gallery-section">
-            <div class="col-md-12">
-            <h2>Οι χώροι μας</h2>
-            </div>
             <div id="photos" class="col-md-12">
+		//create a gallery in advanced custom fields before(ex name: facility-gallery)
                 <?php 
                     $gallery = get_field('facility-gallery');
                 if( $gallery ): ?>
-                <?php $i=0; foreach( $gallery as $gall ): ?>
-                    
+                <?php $i=0; foreach( $gallery as $gall ): ?>      
                 <a data-target="#facilities-carousel" data-slide-to="<?php echo $i;?>">
                     <img class="single-image" data-toggle="modal" data-target="#gallerymodal" src="<?php echo $gall['url']; ?>" /> 
                 </a>
@@ -62,10 +45,9 @@ get_header(); ?>
                             </div>
                         </div>
                     </div>
-                </div>
-                
+                </div>   
             </div>
-        </div>
+          </div>
 	</section>
 </section>
 
