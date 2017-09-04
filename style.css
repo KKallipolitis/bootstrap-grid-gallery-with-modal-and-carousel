@@ -1,0 +1,122 @@
+#facilities-section{
+    padding-top:60px;
+    padding-bottom:60px;
+}
+#facilities{
+    background:#E6E6E6;
+}
+#custom-dialog{
+    width:50%; 
+}
+#custom-dialog img{
+    max-height:700px;
+    width:auto !important;
+    margin:0 auto;
+    border:1px solid #000;
+}
+.fixed-overlay{
+    position: relative;
+    width: 100%;
+    padding: 0px;
+}
+.section-overlay{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    top:20px;
+}
+.modal-content img{
+    display: block;
+    max-width: 100%;
+    height:auto;
+}
+.close-modal{
+    color: #F05A24;;
+    font-size: 40px;
+    padding:10px;
+}
+.close-modal:hover{
+    cursor:pointer;
+}
+#gallery-section{
+    padding-top:65px;
+    padding-bottom:90px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#gallery-section h2{
+    font-size:36px;
+    text-align:center;
+    margin-bottom:70px;
+}
+#facilities-carousel .glyphicon{
+    color:#F05A24;
+}
+#facilities-carousel .carousel-control{
+    background-image:none;
+    text-shadow: 0;
+    background-color: none;
+    opacity: 1; 
+}
+#photos {
+    line-height: 0;
+    -webkit-column-count: 4;
+    -webkit-column-gap:   0px;
+    -moz-column-count:    4;
+    -moz-column-gap:      0px;
+    column-count:         4;
+    column-gap:           0px;
+ }
+
+ #photos .single-image {
+   width: 100% ;
+   height: auto ;
+   padding:1px;
+ }
+ #photos .single-image:hover {
+    cursor:pointer;  
+ }
+ @media (max-width: 1200px) {
+   #photos {
+   -moz-column-count:    3;
+   -webkit-column-count: 3;
+   column-count:         3;
+   }
+   #custom-dialog{
+        width:50%; 
+        margin: 0 auto;
+        top: 50px;
+    }
+ }
+ @media (max-width: 1000px) {
+   #photos {
+   -moz-column-count:    3;
+   -webkit-column-count: 3;
+   column-count:         3;
+   }
+   #custom-dialog{
+    width:60%; 
+    margin: 0 auto;
+    }
+ }
+ @media (max-width: 800px) {
+   #photos {
+   -moz-column-count:    2;
+   -webkit-column-count: 2;
+   column-count:         2;
+   }
+   #custom-dialog{
+    width:70%;
+}
+ }
+ @media (max-width: 400px) {
+   #photos {
+   -moz-column-count:    1;
+   -webkit-column-count: 1;
+   column-count:         1;
+   }
+   #custom-dialog{
+    width:80%; 
+    margin: 0 auto;
+}
+ }
